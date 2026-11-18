@@ -1,0 +1,391 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   SRI SARAVANA'S TEXTILES — Design Tokens
+   Primary identity: golden gradient
+   ========================================================================== */
+@theme {
+  --color-gold: #f8b500;
+  --color-light-gold: #fceabb;
+  --color-cream: #fffaf0;
+  --color-dark: #302312;
+  --color-brown: #594016;
+  --color-muted: #8b7355;
+
+  --color-ivory-50: #fffaf0;
+  --color-ivory-100: #fdf6e6;
+  --color-ivory-200: #f7ecd4;
+
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --shadow-soft: 0 1px 2px rgb(48 35 18 / 0.04), 0 8px 24px -12px rgb(48 35 18 / 0.16);
+  --shadow-lift: 0 2px 4px rgb(48 35 18 / 0.06), 0 18px 40px -16px rgb(48 35 18 / 0.28);
+}
+
+:root {
+  /* Golden gradient — the primary visual identity of the website. */
+  --gradient-primary: linear-gradient(to left, #f8b500, #fceabb);
+  --gradient-warm: linear-gradient(135deg, #f8b500 0%, #fceabb 100%);
+  --gradient-ink: linear-gradient(135deg, #302312 0%, #594016 100%);
+  --header-height: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 1rem);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-dark);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brown);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    color: var(--color-dark);
+  }
+}
+
+/* ==========================================================================
+   Golden gradient utilities
+   ========================================================================== */
+.bg-gradient-primary {
+  background: #fceabb;
+  background: -webkit-linear-gradient(to left, #f8b500, #fceabb);
+  background: linear-gradient(to left, #f8b500, #fceabb);
+}
+
+.bg-gradient-warm {
+  background: #fceabb;
+  background: -webkit-linear-gradient(135deg, #f8b500 0%, #fceabb 100%);
+  background: linear-gradient(135deg, #f8b500 0%, #fceabb 100%);
+}
+
+.text-gradient-ink {
+  background: var(--gradient-ink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+/* Page transition — src/app/template.tsx remounts on every navigation. */
+.page-transition {
+  animation: pageEnter 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Hero — gentle drift of the background gradient highlight. */
+.hero-gradient {
+  position: relative;
+  isolation: isolate;
+}
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -2;
+  background: radial-gradient(
+    42% 46% at 22% 28%,
+    rgb(255 250 240 / 0.75) 0%,
+    rgb(255 250 240 / 0) 62%
+  );
+  animation: heroDrift 18s ease-in-out infinite alternate;
+}
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -2;
+  background: radial-gradient(
+    38% 42% at 82% 76%,
+    rgb(248 181 0 / 0.45) 0%,
+    rgb(248 181 0 / 0) 60%
+  );
+  animation: heroDrift 22s ease-in-out infinite alternate-reverse;
+}
+@keyframes heroDrift {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(3%, 2%, 0) scale(1.06);
+  }
+}
+
+/* Hero copy — staggered entrance. */
+.hero-enter {
+  opacity: 0;
+  animation: heroEnter 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.hero-enter-1 { animation-delay: 0.05s; }
+.hero-enter-2 { animation-delay: 0.18s; }
+.hero-enter-3 { animation-delay: 0.31s; }
+.hero-enter-4 { animation-delay: 0.44s; }
+.hero-enter-5 { animation-delay: 0.57s; }
+@keyframes heroEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Hero image — very slow, subtle push-in. */
+.hero-image-motion {
+  animation: heroImage 22s ease-in-out infinite alternate;
+}
+@keyframes heroImage {
+  from {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(-1.2%, -1%, 0);
+  }
+}
+
+/* Floating decorative textile-inspired motifs. */
+.float-slow {
+  animation: floatSlow 14s ease-in-out infinite;
+}
+.float-slower {
+  animation: floatSlow 19s ease-in-out infinite reverse;
+}
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -16px, 0) rotate(4deg);
+  }
+}
+
+/* Scroll reveal — driven by ScrollReveal (IntersectionObserver). */
+.scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.scroll-reveal--visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Card lift. */
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+.hover-lift:hover {
+  transform: translate3d(0, -6px, 0);
+}
+
+/* Image zoom on hover. */
+.img-zoom {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .img-zoom,
+.group:focus-within .img-zoom {
+  transform: scale(1.06);
+}
+
+/* Overlay + caption reveal on hover. */
+.img-overlay {
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+.group:hover .img-overlay,
+.group:focus-within .img-overlay {
+  opacity: 1;
+}
+.img-caption {
+  opacity: 0;
+  transform: translate3d(0, 12px, 0);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .img-caption,
+.group:focus-within .img-caption {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Navigation active underline. */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
+  transform: scaleX(1);
+}
+.nav-link[data-active="true"] {
+  color: var(--color-brown);
+}
+
+/* Mobile menu open/close. */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease;
+}
+.mobile-menu--open {
+  max-height: 32rem;
+  opacity: 1;
+}
+
+/* Footer accent line. */
+.footer-accent {
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.footer-accent--visible {
+  transform: scaleX(1);
+}
+
+/* Lightbox backdrop. */
+.lightbox-backdrop {
+  animation: backdropFadeIn 0.3s ease-out both;
+}
+@keyframes backdropFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Button press. */
+.btn-press {
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease,
+    color 0.3s ease, border-color 0.3s ease;
+}
+.btn-press:active {
+  transform: translate3d(0, 1px, 0) scale(0.985);
+}
+
+/* Field focus transition. */
+.field {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.field:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 4px rgb(248 181 0 / 0.18);
+}
+
+/* Rating interaction. */
+.rating-star {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
+}
+.rating-star:hover,
+.rating-star[data-selected="true"] {
+  color: var(--color-gold);
+  transform: scale(1.16);
+}
+
+/* ==========================================================================
+   Loading skeletons — a calm pulse instead of a spinner
+   ========================================================================== */
+.skeleton {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-ivory-100) 28%,
+    var(--color-ivory-200) 48%,
+    var(--color-ivory-100) 68%
+  );
+  background-size: 220% 100%;
+  animation: skeletonShimmer 2.2s ease-in-out infinite;
+}
+@keyframes skeletonShimmer {
+  from {
+    background-position: 180% 0;
+  }
+  to {
+    background-position: -40% 0;
+  }
+}
+
+/* ==========================================================================
+   Reduced motion — animations become instant, never removed
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-enter {
+    opacity: 1;
+    transform: none;
+  }
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .img-caption,
+  .img-overlay {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "_meta": {
+    "totalFiles": 52,
+    "totalBytes": 5801314
+  },
+  "images": {
+    "/images/collections/saree-collection-hanging-row.webp": {
+      "width": 2000,
+      "height": 1125,
+      "variants": [
+        {
+          "w": 320,
+          "h": 180,
+          "url": "/images/variants/collections/saree-collection-hanging-row-320-eda046c4.webp"
+        },
+        {
+          "w": 480,
+          "h": 270,
+          "url": "/images/variants/collections/saree-collection-hanging-row-480-5d0a416b.webp"
+        },
+        {
+          "w": 640,
+          "h": 360,
+          "url": "/images/variants/collections/saree-collection-hanging-row-640-dfb3cece.webp"
+        },
+        {
+          "w": 768,
+          "h": 432,
+          "url": "/images/variants/collections/saree-collection-hanging-row-768-91fbc02a.webp"
+        },
+        {
+          "w": 1024,
+          "h": 576,
+          "url": "/images/variants/collections/saree-collection-hanging-row-1024-1088c630.webp"
+        },
+        {
+          "w": 1280,
+          "h": 720,
+          "url": "/images/variants/collections/saree-collection-hanging-row-1280-25767775.webp"
+        },
+        {
+          "w": 1600,
+          "h": 900,
+          "url": "/images/variants/collections/saree-collection-hanging-row-1600-5f2ec40d.webp"
+        },
+        {
+          "w": 1920,
+          "h": 1080,
+          "url": "/images/variants/collections/saree-collection-hanging-row-1920-fff973e1.webp"
+        },
+        {
+          "w": 2000,
+          "h": 1125,
+          "url": "/images/variants/collections/saree-collection-hanging-row-2000-1f78badc.webp"
+        }
+      ]
+    },
+    "/images/collections/saree-collection-peacock-gold.webp": {
+      "width": 1125,
+      "height": 2000,
+      "variants": [
+        {
+          "w": 320,
+          "h": 569,
+          "url": "/images/variants/collections/saree-collection-peacock-gold-320-b906ffae.webp"
+        },
+        {
+          "w": 480,
+          "h": 853,
+          "url": "/images/variants/collections/saree-collection-peacock-gold-480-4a1b4d22.webp"
+        },
+        {
+          "w": 640,
+          "h": 1138,
+          "url": "/images/variants/collections/saree-collection-peacock-gold-640-be6dc380.webp"
+        },
+        {
+          "w": 768,
+          "h": 1365,
+          "url": "/images/variants/collections/saree-collection-peacock-gold-768-b6bb82f9.webp"
+        },
+        {
+          "w": 1024,
+          "h": 1820,
+          "url": "/images/variants/collections/saree-collection-peacock-gold-1024-acc144d9.webp"
+        },
+        {
+          "w": 1125,
+          "h": 2000,
+          "url": "/images/variants/collections/saree-collection-peacock-gold-1125-4b04caf6.webp"
+        }
+      ]
+    },
+    "/images/gallery/saree-collection-printed-designs.webp": {
+      "width": 2000,
+      "height": 1125,
+      "variants": [
+        {
+          "w": 320,
+          "h": 180,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-320-c5e2d3de.webp"
+        },
+        {
+          "w": 480,
+          "h": 270,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-480-eca00796.webp"
+        },
+        {
+          "w": 640,
+          "h": 360,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-640-fdf52615.webp"
+        },
+        {
+          "w": 768,
+          "h": 432,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-768-e152af44.webp"
+        },
+        {
+          "w": 1024,
+          "h": 576,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-1024-4be4acf5.webp"
+        },
+        {
+          "w": 1280,
+          "h": 720,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-1280-ae6902be.webp"
+        },
+        {
+          "w": 1600,
+          "h": 900,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-1600-b3d44161.webp"
+        },
+        {
+          "w": 1920,
+          "h": 1080,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-1920-4c50d0d6.webp"
+        },
+        {
+          "w": 2000,
+          "h": 1125,
+          "url": "/images/variants/gallery/saree-collection-printed-designs-2000-d71c3178.webp"
+        }
+      ]
+    },
+    "/images/gallery/textile-display-rack.webp": {
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "w": 320,
+          "h": 180,
+          "url": "/images/variants/gallery/textile-display-rack-320-e19a0812.webp"
+        },
+        {
+          "w": 480,
+          "h": 270,
+          "url": "/images/variants/gallery/textile-display-rack-480-60bc9412.webp"
+        },
+        {
+          "w": 640,
+          "h": 360,
+          "url": "/images/variants/gallery/textile-display-rack-640-2d9eacf4.webp"
+        },
+        {
+          "w": 768,
+          "h": 432,
+          "url": "/images/variants/gallery/textile-display-rack-768-bc48dbc9.webp"
+        },
+        {
+          "w": 1024,
+          "h": 576,
+          "url": "/images/variants/gallery/textile-display-rack-1024-fee9cde6.webp"
+        },
+        {
+          "w": 1280,
+          "h": 720,
+          "url": "/images/variants/gallery/textile-display-rack-1280-5f2d140f.webp"
+        },
+        {
+          "w": 1600,
+          "h": 900,
+          "url": "/images/variants/gallery/textile-display-rack-1600-fc2c3725.webp"
+        }
+      ]
+    },
+    "/images/hero/sri-saravana-textile-display.webp": {
+      "width": 2000,
+      "height": 1125,
+      "variants": [
+        {
+          "w": 320,
+          "h": 180,
+          "url": "/images/variants/hero/sri-saravana-textile-display-320-2b74a100.webp"
+        },
+        {
+          "w": 480,
+          "h": 270,
+          "url": "/images/variants/hero/sri-saravana-textile-display-480-99c4f018.webp"
+        },
+        {
+          "w": 640,
+          "h": 360,
+          "url": "/images/variants/hero/sri-saravana-textile-display-640-051135a3.webp"
+        },
+        {
+          "w": 768,
+          "h": 432,
+          "url": "/images/variants/hero/sri-saravana-textile-display-768-93405c77.webp"
+        },
+        {
+          "w": 1024,
+          "h": 576,
+          "url": "/images/variants/hero/sri-saravana-textile-display-1024-821a6742.webp"
+        },
+        {
+          "w": 1280,
+          "h": 720,
+          "url": "/images/variants/hero/sri-saravana-textile-display-1280-6dd596ff.webp"
+        },
+        {
+          "w": 1600,
+          "h": 900,
+          "url": "/images/variants/hero/sri-saravana-textile-display-1600-d0bae5bd.webp"
+        },
+        {
+          "w": 1920,
+          "h": 1080,
+          "url": "/images/variants/hero/sri-saravana-textile-display-1920-b248246e.webp"
+        },
+        {
+          "w": 2000,
+          "h": 1125,
+          "url": "/images/variants/hero/sri-saravana-textile-display-2000-9c702b25.webp"
+        }
+      ]
+    },
+    "/images/shop-exterior/sri-saravana-shop-exterior.webp": {
+      "width": 1125,
+      "height": 2000,
+      "variants": [
+        {
+          "w": 320,
+          "h": 569,
+          "url": "/images/variants/shop-exterior/sri-saravana-shop-exterior-320-f4393406.webp"
+        },
+        {
+          "w": 480,
+          "h": 853,
+          "url": "/images/variants/shop-exterior/sri-saravana-shop-exterior-480-1026abd4.webp"
+        },
+        {
+          "w": 640,
+          "h": 1138,
+          "url": "/images/variants/shop-exterior/sri-saravana-shop-exterior-640-c3de5d83.webp"
+        },
+        {
+          "w": 768,
+          "h": 1365,
+          "url": "/images/variants/shop-exterior/sri-saravana-shop-exterior-768-c5463737.webp"
+        },
+        {
+          "w": 1024,
+          "h": 1820,
+          "url": "/images/variants/shop-exterior/sri-saravana-shop-exterior-1024-94440cec.webp"
+        },
+        {
+          "w": 1125,
+          "h": 2000,
+          "url": "/images/variants/shop-exterior/sri-saravana-shop-exterior-1125-1493ad91.webp"
+        }
+      ]
+    },
+    "/images/shop-interior/sri-saravana-shop-interior.webp": {
+      "width": 1125,
+      "height": 2000,
+      "variants": [
+        {
+          "w": 320,
+          "h": 569,
+          "url": "/images/variants/shop-interior/sri-saravana-shop-interior-320-72556c7b.webp"
+        },
+        {
+          "w": 480,
+          "h": 853,
+          "url": "/images/variants/shop-interior/sri-saravana-shop-interior-480-b8bd1c44.webp"
+        },
+        {
+          "w": 640,
+          "h": 1138,
+          "url": "/images/variants/shop-interior/sri-saravana-shop-interior-640-5459186c.webp"
+        },
+        {
+          "w": 768,
+          "h": 1365,
+          "url": "/images/variants/shop-interior/sri-saravana-shop-interior-768-b3b541e9.webp"
+        },
+        {
+          "w": 1024,
+          "h": 1820,
+          "url": "/images/variants/shop-interior/sri-saravana-shop-interior-1024-105b5c07.webp"
+        },
+        {
+          "w": 1125,
+          "h": 2000,
+          "url": "/images/variants/shop-interior/sri-saravana-shop-interior-1125-e322d18d.webp"
+        }
+      ]
+    }
+  }
+}

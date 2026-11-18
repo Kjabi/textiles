@@ -1,0 +1,34 @@
+{
+  "name": "sri-saravanas-textiles",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Official digital showroom website for SRI SARAVANA'S TEXTILES, a textile and clothing store in Rameswaram, Tamil Nadu, India.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:prod": "next start -p 3000",
+    "images:optimize": "python3 scripts/generate-image-variants.py",
+    "images:verify": "node scripts/verify-image-variants.mjs",
+    "predev": "npm run images:verify",
+    "prebuild": "npm run images:verify"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "lucide-react": "^1.70.0",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.5",
+    "typescript": "^5.9.0"
+  }
+}
