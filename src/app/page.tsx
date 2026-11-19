@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { business } from "@/config/business";
 import { Hero } from "@/components/home/Hero";
+import { PreloadHeroImage } from "@/components/home/PreloadHeroImage";
 import { Introduction } from "@/components/home/Introduction";
 import { FeaturedCollections } from "@/components/home/FeaturedCollections";
 import { HomeGallery } from "@/components/home/HomeGallery";
@@ -19,6 +20,7 @@ export const metadata: Metadata = createPageMetadata({
 export default function HomePage() {
   return (
     <>
+      <PreloadHeroImage />
       <Hero />
       <Introduction />
       <FeaturedCollections />
